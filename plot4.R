@@ -38,7 +38,7 @@ with(feb, plot(Time, Voltage, type="l", xlab = "datetime", ylab = "Voltage"))
 plot(feb$Time, feb$Sub_metering_1, type = "l", col="black", xlab = " ", ylab = "Energy sub metering", ylim = c(0, max(feb$Sub_metering_1)))
 lines(feb$Time, feb$Sub_metering_2, col="red")
 lines(feb$Time, feb$Sub_metering_3, col="blue")
-legend("topright", lty = 1, cex=0.7, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty = 1, bty = "n", cex=0.7, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 # Bottom right
 with(feb, plot(Time, Global_reactive_power, type="h", xlab = "datetime"))
